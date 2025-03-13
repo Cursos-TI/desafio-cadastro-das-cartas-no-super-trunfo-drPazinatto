@@ -41,6 +41,8 @@ float area1, area2, pib1, pib2;
     scanf("%d", &turis1);
     printf("Segunda carta: ");
     scanf("%d", &turis2);
+
+    /*Exibição dos dados das cartas cadastradas*/
     printf("=======================================================\n");
     printf("======Segue abaixo os dados das cartas cadastradas=====\n");
     printf("=======================================================\n");
