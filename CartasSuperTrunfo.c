@@ -41,10 +41,10 @@ float area1, area2, pib1, pib2, dens1, dens2, capita1, capita2;
     scanf("%d", &turis1);
     printf("Segunda carta: ");
     scanf("%d", &turis2);
-
+    /*Calculo de densidade populacional*/
     dens1 = pop1 / area1;
     dens2 = pop2 / area2;
-
+    /*Calculo de renda per capita*/
     capita1 = pib1/pop1;
     capita2 = pib2/pop2;
 
