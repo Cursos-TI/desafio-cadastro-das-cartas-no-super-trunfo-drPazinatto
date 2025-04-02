@@ -8,7 +8,7 @@ int main() {
 
     printf("Voce irá digitar os dados das duas cartas em sequencia!\n");
     printf("=======================================================\n");
-    printf("Digite o ESTADO da carta.(Escolha entre A-H)\nPrimeira carta:  ");
+    printf("Digite o ESTADO da carta (Escolha entre A-H)\nPrimeira carta:  ");
     scanf(" %2s", estado1);
     printf("Segunda carta: ");
     scanf(" %2s", estado2);
