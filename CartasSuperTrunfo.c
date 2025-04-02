@@ -3,7 +3,7 @@
 int main (){
 char estado1[2], estado2[2], codigo1[4], codigo2[4], cidade1[40], cidade2[40];
 int pop1, pop2, turis1, turis2;
-float area1, area2, pib1, pib2;
+float area1, area2, pib1, pib2, dens1, dens2, capita1, capita2;
 
     printf("Voce irá digitar os dados das duas cartas em sequencia!\n");
     printf("=======================================================\n");
@@ -42,6 +42,12 @@ float area1, area2, pib1, pib2;
     printf("Segunda carta: ");
     scanf("%d", &turis2);
 
+    dens1 = pop1 / area1;
+    dens2 = pop2 / area2;
+
+    capita1 = pib1/pop1;
+    capita2 = pib2/pop2;
+
     /*Exibição dos dados das cartas cadastradas*/
     printf("=======================================================\n");
     printf("======Segue abaixo os dados das cartas cadastradas=====\n");
@@ -53,8 +59,10 @@ float area1, area2, pib1, pib2;
     printf("Nome da cidade: %s\n", cidade1);
     printf("População: %d\n",pop1);
     printf("Área: %.2f km²\n",area1);
-    printf("PIB: R$ %.2f bilhões\n",pib1);
+    printf("PIB: R$ %.2f \n",pib1);
     printf("Pontos turisticos: %d\n",turis1);
+    printf("Densidade populacional: %.2f habitantes/km²\n", dens1);
+    printf("Pib PerCapita: R$ %.2f \n", capita1);
     printf("=======================================================\n");
     printf("================Dados da segunda carta=================\n");
     printf("=======================================================\n");
@@ -63,8 +71,10 @@ float area1, area2, pib1, pib2;
     printf("Nome da cidade: %s\n", cidade2);
     printf("População: %d\n",pop2);
     printf("Área: %.2f km²\n",area2);
-    printf("PIB: R$ %.2f bilhões\n",pib2);
+    printf("PIB: R$ %.2f \n",pib2);
     printf("Pontos turisticos: %d\n",turis2);
+    printf("Densidade populacional: %.2f habitantes/km²\n", dens2);
+    printf("Pib PerCapita: R$ %.2f \n", capita2);
     printf("=======================================================\n");
     printf("=======================================================\n");
     return 0;
